@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- <div class="col-2">
+          <button>SEND</button>
+            </div> -->
+
+
+            <div class="col-12 col-lg-12 bord">
+                <div class="displaybox" id="tasklist">
+                    <div class="taskcard" id="1">
+                        <p class="task"> Go to library - wednesday 24th December, 2024</p>
+                        <button onclick="deleteTask('1')" class="btn btn-danger" style="height: 70px;">Delete</button>
+                    </div>
+
+                    <div class="taskcard" id="2">
+                        <p class="task"> Go to gym - wednesday 24th December, 2024</p>
+                        <button class="btn btn-danger" onclick="deleteTask('2')" style="height: 70px;">Delete</button>
+                    </div>
+                </div>
+                <div class="actionbox">
+                    <input type="email" class="form-control bb" id="newtask"
+                        placeholder="Enter task title">
+                    <button onclick="addTask()" class="btn cc btn-success">Create Task</button>
+                    
+                </div>
+                
+                <BUtton class="btn btn-danger cc2" id="deleteAll" style="margin-top: 6px; width: 100%; border-radius: 90px;">Delete All Task</BUtton>
+
+            </div>
+        </div>
+    </div>
+
+
+   
+
+   
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.2/dist/sweetalert2.all.min.js
+"></script>
+
+<script src="script.js"></script>
+</body>
+
+</html>
